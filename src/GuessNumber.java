@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- * @version 2016-08-23
+ * @version 2016-08-30
  * @author Michael Servilla
  */
 public class GuessNumber {
@@ -14,8 +14,6 @@ public class GuessNumber {
     public static void main(String [] args){
         Random rand = new Random();
         int randomNumber = rand.nextInt(10) + 1;
-//        System.out.println(randomNumber);
-//        String userName;
 
         Scanner scanIn = new Scanner(System.in);
 
