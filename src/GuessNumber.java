@@ -18,6 +18,7 @@ public class GuessNumber {
         System.out.print("Please enter your name: ");
         String userName = scanIn.next();
 
+        //While loop to continue to play (stay or quit).
         while (stay.equalsIgnoreCase("Y")) {
             System.out.print("Hi there " + userName + ", please pick a number between 1 and 10 (inclusive): ");
             int rand = (int) (Math.random() * 10) + 1;
@@ -34,7 +35,7 @@ public class GuessNumber {
         }
     }
 
-//Method for error control.
+    //Method for input error control.
     private static int TryParseIn(){
         Scanner sc = new Scanner(System.in);
         int number;
